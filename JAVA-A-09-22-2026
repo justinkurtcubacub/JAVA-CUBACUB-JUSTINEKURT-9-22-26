@@ -1,1 +1,124 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Hello World");
+        double price = 20.67;
+        float weight = 70.5f;
+        char grades = 'A';
+        int age = 19;
+        boolean isStudent = true;
+        String name = "Kurt";
+        // Arithmetic Operations
+        System.out.println("Name: " + name);
+        System.out.println("Age: " + age);
+        System.out.println("Weight: " + weight);
+        System.out.println("Is Student?: " + isStudent);
+        System.out.println("Price: " + price);
 
+        System.out.print("\nEnter your City: ");
+        String userCity = scanner.next(); // reads one word
+        System.out.println(userCity);
+        // Reading the full line (including the space)
+        scanner.nextLine();//
+        System.out.print("Enter a Sentence about yourself: ");
+        String fullSentence = scanner.nextLine(); // reads the entire line
+        System.out.println("You said: "+ fullSentence);
+
+
+        int a = 10, b = 3;
+        System.out.println("a + b = " + (a + b));
+        System.out.println("a - b = " + (a - b));
+        System.out.println("a * b = " + (a * b));
+        System.out.println("a / b = " + (a / b));
+        System.out.println("a % b = " + (a % b));
+
+        double x = 10, y=3;
+        System.out.println("x / y = " + (a/b));
+        // Relational Operator ( Return a Bool 1 and 0 )
+        System.out.println("\na == b = " +(a==b));
+        System.out.println("a != b = " +(a!=b));
+        System.out.println("a > b = " +(a>b));
+        System.out.println("a < b = " +(a<b));
+        System.out.println("a >= b = " +(a>=b));
+        System.out.println("a <= b = " +(a<=b));
+
+        // Logical Operator
+        boolean p = true, q = false;
+        System.out.println("\np&&q: " +(p&&q));
+        System.out.println("p || q:" +(p||q));
+        System.out.println("!p: " +(!p));
+        System.out.println("!q:  " +(!q));
+
+        //Assignment
+        // +=, -=, *=,/=
+        int score = 50;
+        score += 10;
+        System.out.println("\nScore after the class += 10: "+score);
+        score *=2;
+        System.out.println("score after *= 2: " + score);
+
+        //Increment / Decrement Operators
+        int counter = 5;
+                System.out.println("\ncounter ++ (post): " + counter++); //5
+                System.out.println("counter now: " + counter++); //6
+                System.out.println("++counter (pre): " + ++counter); //7
+        // Control Flow (if/else/switch case, loops(for, while, dowhile))
+        System.out.println("Enter your exam score: ");
+            int Examscore = scanner.nextInt();
+
+            if (Examscore >= 90) {
+                System.out.println("Grade: A");
+            }
+            else if (Examscore >= 80){
+                System.out.println("Grade: B");
+                }
+            else if(Examscore >=70) {
+                System.out.println("Grade: C ");
+            }
+            else{
+                System.out.println("Grade: F");
+            }
+        // Switch Case Statement
+        scanner.close();
+
+
+        /*
+Data Types
+int - Whole Number
+double - double precisionss of decimal number
+float - single precision of decimal number
+char - a single character of text (single quotes ' ')
+boolean - True or False
+String - not primitive text
+
+/*
+Declaring a Variable of different data type
+int         age                 =               19                  ;
+^           ^                   ^               ^                   ^
+datatypes   variable            EQ              value               close tag
+*/
+
+/*
+double price = 20.30;
+float weight = 70.5f;
+char grades = 'A';
+boolean isStudent = True;
+String name = "Alice";
+ */
+        /* NOTES ONLY---------------------------------------------
+        Operators and Expressions
+        =,-,*,/, &&, %,  ||,>,<,>=,<=,!=
+         */
+
+        /*
+        int a = 10, b = 3;
+        System.out.println("a + b " + (a + b));
+        System.out.println("a - b " + (a - b));
+        System.out.println("a * b " + (a * b));
+        System.out.println("a / b " + (a / b));
+        System.out.println("a % b " + (a % b));
+
+         */
+    }
+}
