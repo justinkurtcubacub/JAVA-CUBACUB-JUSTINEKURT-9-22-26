@@ -79,54 +79,6 @@ public class Main {
             else{
                 System.out.println("Grade: F");
             }
-        // Switch Case Statement
-                // Switch Case Statement
-        System.out.print("\nEnter a Day number (1-7): ");
-        int day = scanner.nextInt();
-
-        switch (day) {
-            case 1: System.out.println("Monday"); break;
-            case 2: System.out.println("Tuesday"); break;
-            case 3: System.out.println("Wednesday"); break;
-            case 4: System.out.println("Thursday"); break;
-            case 5: System.out.println("Friday"); break;
-            case 6: System.out.println("Saturday"); break;
-            case 7: System.out.println("Sunday"); break;
-            default: System.out.println("Invalid Day");
-        }
-
-        // Loops (for, while, do while)
-        System.out.println("\nCounting 1 to 5 with a loop:");
-        for (int i = 1; i <= 5; i++) {
-            System.out.print(i + " ");
-        }
-        System.out.println();
-
-        // While Loops
-        System.out.println("\nCounting down with a while loop: ");
-        int m = 5;
-        while (m > 0) {
-            System.out.print(m + " ");
-            m--;
-        }
-        System.out.println();
-
-        // Do While Loops
-        System.out.println("\ndo-while example: ");
-        int z = 0;
-        do {
-            System.out.println("z = " + z);
-            z++; //
-        } while (z < 3);
-
-        // Break and Continue
-        System.out.println("\nSkipping 3 using continue, stopping at 7 using break: ");
-        for (int i = 1; i <= 10; i++) {
-            if (i == 3) continue;
-            if (i == 7) break;
-            System.out.print(i + " ");
-        }
-        System.out.println("\n");
         scanner.close();
 
 
